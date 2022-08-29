@@ -1,0 +1,91 @@
+/* Base app-wide styles */
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: regular;
+  src: local('Roboto-Regular'), url('../../../assets/fonts/Roboto-Regular.ttf') format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', 'sans-serif';
+
+  /* Global variables to define theme */
+  --color-gray-50: rgb(243, 236, 230);
+  --color-gray-100: rgb(207, 201, 195);
+  --color-gray-300: rgb(99, 92, 86);
+  --color-gray-400: rgb(70, 65, 60);
+  --color-gray-500: rgb(37, 34, 31);
+  --color-gray-600: rgb(32, 29, 26);
+  --color-gray-700: rgb(31, 26, 22);
+
+  --color-primary-50: #1a8e38;
+  --color-primary-100: #177e32;
+  --color-primary-200: #146f2b;
+  --color-primary-400: #0f4f1f;
+  --color-primary-500: #0c3f19;
+  --color-primary-700: #06200c;
+  --color-primary-200-contrast: rgb(100, 46, 2);
+  --color-primary-500-contrast: white;
+
+  --color-note: #FFFDE7;
+
+  --color-error-100: rgb(255, 192, 180);
+  --color-error-500: rgb(199, 51, 15);
+
+  --color-primary-500-bg: rgb(63, 60, 58);
+
+  --color-btn-ok: rgb(3, 146, 46);
+  --color-btn-ok-hover: rgb(3, 107, 31);
+  --color-btn-cancel: rgb(180, 8, 8);
+  --color-btn-cancel-hover: rgb(133, 6, 6);
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+
+  --border-radius-small: 4px;
+  --border-radius-medium: 6px;
+
+  --shadow-medium: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+body {
+  background-color: var(--color-gray-50);
+  margin: 0;
+  text-align: center;
+}
+
+main {
+  margin: 0 auto;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  cursor: pointer;
+  font: inherit;
+  padding: var(--space-2) var(--space-6);
+  background-color: var(--color-primary-50);
+  color: var(--color-primary-500-contrast);
+  border: 1px solid var(--color-primary-500);
+  border-radius: var(--border-radius-small);
+  border-color: var(--color-primary-50);
+}
+
+.btn-ok:hover {
+  background-color: var(--color-btn-ok-hover);
+}

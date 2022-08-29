@@ -1,0 +1,21 @@
+#splash-section {
+  margin-top: 5rem;
+}
+
+#splash {
+  padding: var(--space-6);
+  width: 450px;
+  height: 550px;
+}
+
+h1 {
+  color: var(--color-primary-400);
+  font-weight: bold;
+}
+
+@media (max-width: 28rem){
+  #splash {
+    width: 90vw;
+    height: calc(90vw  * 1.23);
+  }
+}

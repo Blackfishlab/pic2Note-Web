@@ -1,0 +1,11 @@
+<div id="notes-section">
+  <app-notedelete *ngIf="showNoteDelete" (modalWindowCloseEvent)="handleModalWindowClose($event)"></app-notedelete>
+  <h2 *ngIf="!dataLoaded">No Notes Found!</h2>
+  <ul id="notes-grid">
+    <app-note *ngFor="let note of notes | async"
+      [noteComponent]="note"
+      (deleteNoteEvent)="handleDeleteNote($event)"
+      (viewEditNoteEvent)="handleViewEditNote($event)">
+  </app-note>
+  </ul>
+</div>

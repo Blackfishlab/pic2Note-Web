@@ -1,0 +1,12 @@
+<article class="note-item">
+  <img [src]="noteComponent.pic" alt="image">
+  <div class="note-item-content">
+    <p>Date taken: {{ noteComponent.date.toDate() | date: 'dd.MM.yyyy HH:ss' }}</p>
+    <p>Title: {{ noteComponent.title.substring(0, 20) }}</p>
+    <p>Note: {{ noteComponent.note.substring(0, 20) }} </p>
+    <div class="note-item-actions">
+      <button class="btn btn-viewedit" (click)="startViewEditNote($event, noteComponent.noteId)">View & Edit</button>
+      <button class="btn btn-delete" (click)="startDeleteNote($event, noteComponent.noteId)">Delete</button>
+    </div>
+  </div>
+</article>

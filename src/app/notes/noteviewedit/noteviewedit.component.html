@@ -1,0 +1,21 @@
+<article>
+  <section id="note-section">
+    <form (ngSubmit)="onSubmitForm()" #f="ngForm">
+      <div id="note-data">
+        <p>Date taken:</p>
+        <p id="date">{{ templateNoteDate | date: 'dd.MM.yyyy' }}</p>
+        <img [src]="templateNotePic" alt="Note image" id="image">
+        <div class="form-control">
+          <label for="titleInput" class="label">Title:</label>
+          <input type="text" id="titleInput" name="title" [(ngModel)]="templateNoteTitle" required>
+        </div>
+        <div class="form-control">
+          <label for="noteInput" class="label">Note:</label>
+          <textarea name="note" id="noteInput" cols="30" rows="5" [(ngModel)]="templateNoteNote"></textarea>
+        </div>
+      </div>
+      <button type="submit" class="btn-ok note-button" [disabled]="!f.valid">OK</button>
+      <button type="button" (click)="onClickCancel()" class="btn-cancel note-button">Cancel</button>
+    </form>
+  </section>
+</article>

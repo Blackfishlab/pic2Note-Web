@@ -1,0 +1,39 @@
+.note-item {
+  border-radius: var(--border-radius-medium);
+  background-color: var(--color-note);
+  text-align: left;
+  overflow: hidden;
+}
+
+.note-item p {
+  padding-left: 10px;
+}
+
+.note-item-actions {
+  text-align: center;
+}
+
+.note-item img {
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+}
+
+.btn {
+  cursor: pointer;
+  font: inherit;
+  padding: var(--space-2) var(--space-6);
+  background-color: var(--color-primary-50);
+  color: var(--color-primary-500-contrast);
+  border: 1px solid var(--color-primary-500);
+  border-radius: var(--border-radius-small);
+  border-color: var(--color-primary-50);
+}
+
+.btn:hover {
+  background-color: var(--color-primary-400);
+}
+
+.btn-delete {
+  margin-left: 0.25rem;
+}
