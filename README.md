@@ -13,3 +13,5 @@ pic2Note Mobile application is wrtten in Flutter
 pic2Note Web application is written in Angular
 
 Both applications use Google Firebase as backend
+
+http://blackfish.hr
