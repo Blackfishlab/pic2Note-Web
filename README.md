@@ -14,4 +14,6 @@ pic2Note Web application is written in Angular
 
 Both applications use Google Firebase as backend
 
-http://blackfish.hr
+
+For more info please visit:
+http://blackfish.hr/pic2note/
