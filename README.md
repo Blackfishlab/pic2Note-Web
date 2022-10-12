@@ -1,4 +1,4 @@
-# pic2note Web application
+# pic2note Web Application
 
 pic2Note application provides “photo post-it” functionality
 
